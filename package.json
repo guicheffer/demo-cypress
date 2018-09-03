@@ -1,0 +1,16 @@
+{
+  "name": "getyourguide-e2e",
+  "version": "0.0.1",
+  "description": "poc for an e2e tests under getyourguide.com",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "keywords": [
+    "e2e",
+    "cypress",
+    "getyourguide"
+  ],
+  "author": "GetYourGuide's Frontend Team",
+  "license": "ISC"
+}
