@@ -8,15 +8,17 @@ context('Actions', () => {
   // https://on.cypress.io/interacting-with-elements
 
   it('searches on the search box input on homepage', () => {
-    // https://on.cypress.io/type
+    const type = 'london br'
+    const expected = 'London Bridge'
+
     cy.get('.search-form-input')
       .type('london br', { force: true })
 
-    cy.get('.suggestion-item:first-child[data-value=London][data-index=0]')
+    cy.get(`.suggestion-item[data-value="${expected}"]`)
       .click()
 
     cy.get('.search-form-input')
-      .should('have.value', 'London BridgE')
+      .should('have.value', expected)
     //
     //   // .type() with special character sequences
     //   .type('{leftarrow}{rightarrow}{uparrow}{downarrow}')

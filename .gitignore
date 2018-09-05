@@ -13,3 +13,4 @@ yarn-error.log
 
 # Cypress stuff
 cypress/videos/
+cypress/screenshots/
