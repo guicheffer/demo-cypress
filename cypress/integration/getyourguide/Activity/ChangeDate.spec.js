@@ -33,8 +33,6 @@ context('ADP > Change Dates', () => {
     cy.get(`.pika-table td:not(.is-disabled):not(.is-not-available):not(.is-empty)
       .pika-button[data-pika-day=${now.getDate()}]`).click()
 
-    cy.wait(200)
-    // cy.get('#datepicker .datepicker-input').blur()
     cy.log('ready to interact with total of participants')
     cy.get('.participants-summary-container').focus()
     cy.get('.peoplepicker-input-adult + .people-picker-plus').click()
